@@ -11,12 +11,12 @@ import sys
 # fast test
 if int(sys.argv[1]) == 1:
     cls = sts = ['bulbasaur']
-    downloader = ImBase(cls, sts, gs=50, p=False)
+    downloader = ImBase(cls, sts, gs=10, p=False)
     downloader.run()
 
 # extended test
 elif int(sys.argv[1]) == 2:
     cls = sts = ['bulbasaur', 'charmander', 'squirtle']
-    downloader = ImBase(cls, sts)
+    downloader = ImBase(cls, sts, mr=10, gs=10, p=False)
 
     downloader.run()
